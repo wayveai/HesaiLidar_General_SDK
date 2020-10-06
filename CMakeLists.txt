@@ -17,7 +17,7 @@ include_directories(
     src/PandarGeneralRaw/include
     ${Boost_INCLUDE_DIRS}
     ${PCL_INCLUDE_DIRS}
-    ${LIBYAML_INCLUDEDIR}
+    ${LIBYAML_INCLUDE_DIRS}
 )
 
 add_library( ${PROJECT_NAME} SHARED
@@ -30,7 +30,7 @@ target_link_libraries(${PROJECT_NAME}
     PandarGeneral
     ${Boost_LIBRARIES}
     ${PCL_IO_LIBRARIES}
-    ${LIBYAML_LIBRARIES}
+    ${LIBYAML_LDFLAGS}
     pcap
 )
 
@@ -44,7 +44,7 @@ if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_CURRENT_SOURCE_DIR})
         ${PROJECT_NAME}
         ${Boost_LIBRARIES}
         ${PCL_IO_LIBRARIES}
-        ${LIBYAML_LIBRARIES}
+        ${LIBYAML_LDFLAGS}
     )
 endif(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_CURRENT_SOURCE_DIR})
 

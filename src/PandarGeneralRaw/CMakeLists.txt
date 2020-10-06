@@ -16,7 +16,7 @@ include_directories(
 	include
 	${Boost_INCLUDE_DIRS}
 	${PCL_INCLUDE_DIRS}
-	${LIBYAML_INCLUDEDIR}
+	${LIBYAML_INCLUDE_DIRS}
 )
 
 
@@ -30,7 +30,7 @@ add_library( ${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME}
 		${Boost_LIBRARIES}
 		${PCL_IO_LIBRARIES}
-		${LIBYAML_LIBRARIES}
+		${LIBYAML_LDFLAGS}
 )
 
 if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_CURRENT_SOURCE_DIR})
