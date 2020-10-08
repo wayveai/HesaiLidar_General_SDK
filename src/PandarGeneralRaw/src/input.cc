@@ -25,8 +25,8 @@
 #include <iostream>
 #include <sstream>
 
-#include "src/input.h"
-#include "log.h"
+#include "input.h"
+#include "pandarGeneral/log.h"
 
 Input::Input(uint16_t port, uint16_t gpsPort) {
   // LOG_D("port: %d, gpsPort: %d", port,gpsPort);

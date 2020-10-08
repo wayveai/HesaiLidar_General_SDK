@@ -16,9 +16,9 @@
 
 #include <sstream>
 
-#include "src/input.h"
-#include "src/pandarGeneral_internal.h"
-#include "log.h"
+#include "input.h"
+#include "pandarGeneral_internal.h"
+#include "pandarGeneral/log.h"
 
 #ifndef M_PI
 #define M_PI 3.14159265358979323846

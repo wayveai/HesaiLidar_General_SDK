@@ -9,7 +9,7 @@ set (CMAKE_CXX_FLAGS "-fPIC --std=c++11")
 add_subdirectory(src/PandarGeneralRaw)
 
 include_directories(
-    .
+    src
     include
     src/PandarGeneralRaw/include
     ${Boost_INCLUDE_DIRS}

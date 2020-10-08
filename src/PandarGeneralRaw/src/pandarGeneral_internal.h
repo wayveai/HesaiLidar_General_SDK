@@ -28,10 +28,10 @@
 #include <boost/function.hpp>
 
 #include "pandarGeneral/point_types.h"
-#include "src/input.h"
-#include "src/pandarQT.h"
-#include "src/pandarXT.h"
-#include "src/pcap_reader.h"
+#include "input.h"
+#include "pandarQT.h"
+#include "pandarXT.h"
+#include "pcap_reader.h"
 
 #define SOB_ANGLE_SIZE (4)
 #define RAW_MEASURE_SIZE (3)
